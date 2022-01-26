@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 export default function NavBar(){
     return (
-        <nav>
+        <nav className="navbar">
             <h1>
                 <Link to = "/transactions">Budget App</Link>
             </h1>
