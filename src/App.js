@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+
 // PAGES
 import Edit from "./Pages/Edit";
 import FourOFour from "./Pages/FourOFour";
@@ -11,10 +12,13 @@ import Show from "./Pages/Show";
 // COMPONENTS
 import NavBar from "./Components/NavBar";
 
+import Container from "react-bootstrap/Container";
+
 
 function App(){
   return (
     <div className="App">
+      <Container>
       <Router>
         <NavBar />
         <main>
@@ -28,7 +32,10 @@ function App(){
            </Routes>
         </main>
       </Router>
+      </Container>
     </div>
   )
 }
 export default App;
+
+
